@@ -1,5 +1,179 @@
 body {
+  color: #0b530b;
+  margin: 0;
+}
+
+/*HEADER*/
+nav {
+  display: flex;
+  background-color: #0b530b;
+  padding: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+#logo {
+  flex: 1;
+  text-align: center;
+}
+
+#menu {
+  flex: 3;
+  text-align: center;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline;
+  padding: 15px;
+  font-size: 20px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #0b530b;
+  padding: 3px 15px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  padding: 8px;
+}
+
+.facebook:hover a {
+  color: #0777e9;
+  font-weight: bold;
+}
+
+.twitter:hover a {
+  color: #1a91da;
+  font-weight: bold;
+}
+
+.youtube:hover a {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/*PORTADA*/
+.portada {
+  background: url('../../assets/images/toroPortada.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.portada h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: wheat;
+  text-shadow: 2px 2px #000000;
+}
+
+.portada img {
+  width: 100%;
+}
+
+.portada button {
+  padding: 15px 20px;
+  border: none;
+  background-color: wheat;
   color: #1f1f1f;
-  background: linear-gradient(to bottom, #da555c, #c0ffee);
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portada button:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.categorias {
+  text-align: center;
+  background-color: wheat;
+  padding: 15px;
+  text-shadow: 1px 1px #000000;
+}
+
+.grid-categorias {
+  display: flex;
+}
+
+.grid-categorias button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 50px 20px;
+  border: none;
+  background-color: #0b530b;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  text-shadow: 1px 1px #000000;
+}
+
+.grid-categorias button:hover {
+  cursor: pointer;
+  background-blend-mode: luminosity;
+}
+
+.entrantes {
+  background: url('../images/entrantes.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.guisos {
+  background: url('../images/guiso.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.ibericos {
+  background: url('../images/ibericos.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.postres {
+  background: url('../images/postre.jpg');
+  background-position: center center;
+  background-size: cover;
 }
