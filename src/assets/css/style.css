@@ -8,6 +8,7 @@ nav {
   display: flex;
   background-color: #0b530b;
   padding: 0 15px;
+  position: relative;
 }
 
 nav a {
@@ -37,6 +38,77 @@ nav a:hover {
   display: inline;
   padding: 15px;
   font-size: 20px;
+}
+
+#res-menu {
+  display: none;
+  flex: 1;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#res-menu svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+#res-menu-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: wheat;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+#res-menu-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#res-menu-items ul li {
+  padding: 15px;
+  border-bottom: solid #0b530b;
+  transition: all 0.5s;
+}
+
+#res-menu-items ul li a {
+  color: #0b530b;
+  font-weight: bold;
+}
+
+#res-menu-items.hidden {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#res-menu-items.hidden ul li {
+  padding: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+@media (max-width: 670px) {
+  #logo {
+    flex: 9;
+    text-align: center;
+    margin-left: -10%;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #res-menu {
+    display: block;
+  }
 }
 
 /*FOOTER*/
@@ -176,4 +248,24 @@ footer ul li {
   background: url('../images/postre.jpg');
   background-position: center center;
   background-size: cover;
+}
+
+@media (max-width: 670px) {
+  .portada {
+    background-position: left center;
+  }
+
+  .portada button {
+    top: 70%;
+  }
+
+  .grid-categorias {
+    display: block;
+  }
+
+  .grid-categorias button {
+    width: 80%;
+    flex: none;
+    margin: 15px;
+  }
 }
