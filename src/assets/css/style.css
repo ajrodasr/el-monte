@@ -159,8 +159,8 @@ footer ul li {
   font-weight: bold;
 }
 
-/*PORTADA*/
-.portada {
+/*INICIO*/
+#inicio .portada {
   background: url('../../assets/images/toroPortada.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -171,7 +171,7 @@ footer ul li {
   position: relative;
 }
 
-.portada h2 {
+#inicio .portada h2 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -181,11 +181,11 @@ footer ul li {
   text-shadow: 2px 2px #000000;
 }
 
-.portada img {
+#inicio .portada img {
   width: 100%;
 }
 
-.portada button {
+#inicio .portada button {
   padding: 15px 20px;
   border: none;
   background-color: wheat;
@@ -199,80 +199,165 @@ footer ul li {
   transform: translate(-50%, -50%);
 }
 
-.portada button:hover {
+#inicio .portada button:hover {
   cursor: pointer;
   filter: brightness(1.1);
 }
 
-.categorias {
+#inicio .categorias {
   text-align: center;
   background-color: wheat;
   padding: 15px;
   text-shadow: 1px 1px #000000;
 }
 
-.grid-categorias {
+#inicio .grid-categorias {
   display: flex;
 }
 
-.grid-categorias button {
+#inicio .grid-categorias div {
   flex: 1;
   margin: 0 5px;
   padding: 50px 20px;
   border: none;
   background-color: #0b530b;
-  color: white;
   font-weight: bold;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   font-size: 20px;
+}
+
+#inicio .grid-categorias div a {
+  text-decoration: none;
+  color: wheat;
   text-shadow: 1px 1px #000000;
 }
 
-.grid-categorias button:hover {
-  cursor: pointer;
+#inicio .grid-categorias div:hover {
   background-blend-mode: luminosity;
 }
 
-.entrantes {
+#inicio .entrantes {
   background: url('../images/entrantes.jpg');
   background-position: center center;
   background-size: cover;
 }
 
-.guisos {
+#inicio .guisos {
   background: url('../images/guiso.jpg');
   background-position: center center;
   background-size: cover;
 }
 
-.ibericos {
+#inicio .ibericos {
   background: url('../images/ibericos.jpg');
   background-position: center center;
   background-size: cover;
 }
 
-.postres {
+#inicio .postres {
   background: url('../images/postre.jpg');
   background-position: center center;
   background-size: cover;
 }
 
 @media (max-width: 670px) {
-  .portada {
+  #inicio .portada {
     background-position: left center;
   }
 
-  .portada button {
+  #inicio .portada button {
     top: 70%;
   }
 
-  .grid-categorias {
+  #inicio .grid-categorias {
     display: block;
   }
 
-  .grid-categorias button {
+  #inicio .grid-categorias div {
     width: 80%;
     flex: none;
     margin: 15px;
+  }
+}
+
+/*CATEGORIAS*/
+
+#categorias .portada {
+  background: url('../images/categorias.jpg');
+  background-position: center center;
+  background-size: cover;
+  padding: 15px;
+  text-align: center;
+}
+
+#categorias h1 {
+  text-shadow: 1px 1px #000000;
+}
+
+#categorias .portada .grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+#categorias .portada .grid-categorias div {
+  border: solid wheat 15px;
+  padding: 80px 40px;
+  margin: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0);
+  font-size: 30px;
+  background-color: #0b530b;
+}
+
+#categorias .portada .grid-categorias div a {
+  color: wheat;
+  text-shadow: 2px 2px #000000;
+  text-decoration: none;
+}
+
+#categorias .portada .grid-categorias div:hover {
+  background-blend-mode: luminosity;
+  border: solid 10px;
+  transition: all 0.3s;
+}
+
+#categorias .entrantes {
+  grid-column: 1;
+  grid-row: 1;
+  background: url('../images/entrantes.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+#categorias .guisos {
+  grid-column: 2;
+  grid-row: 1;
+  background: url('../images/guiso.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+#categorias .ibericos {
+  grid-column: 1;
+  grid-row: 2;
+  background: url('../images/ibericos.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+#categorias .postres {
+  grid-column: 2;
+  grid-row: 2;
+  background: url('../images/postre.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (max-width: 670px) {
+  #categorias .portada {
+    background-position: left center;
+  }
+
+  #categorias .portada .grid-categorias {
+    display: block;
   }
 }
