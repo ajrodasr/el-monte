@@ -57,6 +57,7 @@ nav a:hover {
 }
 
 #res-menu-items {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -106,7 +107,8 @@ nav a:hover {
     display: none;
   }
 
-  #res-menu {
+  #res-menu,
+  #res-menu-items {
     display: block;
   }
 }
