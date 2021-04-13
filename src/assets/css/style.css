@@ -130,6 +130,11 @@ footer a:hover {
 
 footer ul {
   list-style: none;
+  padding: 0;
+}
+
+footer svg {
+  margin-right: 3px;
 }
 
 footer ul li {
