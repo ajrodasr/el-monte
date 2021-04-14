@@ -56,6 +56,10 @@ nav a:hover {
   font-size: 30px;
 }
 
+span.hidden {
+  display: none;
+}
+
 #res-menu-items {
   display: none;
   position: absolute;
@@ -359,5 +363,102 @@ footer ul li {
 
   #categorias .portada .grid-categorias {
     display: block;
+  }
+}
+
+/*ELEMENTOS CATEGORIAS*/
+#elementos .portada {
+  background: url('../images/categorias.jpg');
+  background-position: center center;
+  background-size: contain;
+  padding: 15px;
+  text-align: center;
+}
+
+#elementos .elemento {
+  display: flex;
+  background-color: wheat;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0);
+  width: 80%;
+  margin: 15px auto;
+}
+
+#elementos .elemento .image {
+  flex: 1;
+  padding: 15px;
+}
+
+#elementos .elemento .image img {
+  width: 100%;
+}
+
+#elementos .elemento .text {
+  flex: 2;
+  text-align: left;
+  padding: 15px;
+}
+
+#elementos .elemento .text a {
+  background-color: #0b530b;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+#elementos .elemento .text a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 670px) {
+  #elementos .portada {
+    background-position: left center;
+  }
+
+  #elementos .elemento {
+    display: block;
+    width: 90%;
+  }
+}
+
+/*DETALLES ELEMENTOS*/
+#detalles .portada {
+  background: url('../images/categorias.jpg');
+  background-position: center center;
+  background-size: contain;
+  padding: 15px;
+  text-align: center;
+}
+
+#detalles .detalle {
+  width: 80%;
+  margin: 15px auto;
+}
+
+#detalles .detalle .image {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0);
+}
+
+#detalles .detalle .texto {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0);
+  background-color: wheat;
+  padding: 15px;
+  text-align: left;
+}
+
+#detalles .detalle .image img {
+  width: 100%;
+}
+
+#detalles .detalle .texto span {
+  font-weight: bold;
+}
+
+@media (max-width: 670px) {
+  #detalles .portada {
+    background-position: left center;
+  }
+
+  #detalles .detalle {
+    width: 90%;
   }
 }
