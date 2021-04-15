@@ -421,7 +421,7 @@ footer ul li {
 }
 
 /*DETALLES ELEMENTOS*/
-#detalles .portada {
+#detalles {
   background: url('../images/categorias.jpg');
   background-position: center center;
   background-size: contain;
@@ -429,36 +429,55 @@ footer ul li {
   text-align: center;
 }
 
-#detalles .detalle {
+#detalles article {
   width: 80%;
   margin: 15px auto;
 }
 
-#detalles .detalle .image {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0);
+#detalles article .image {
+  box-shadow: 2px 3px 2px 1px rgba(0, 0, 0);
 }
 
-#detalles .detalle .texto {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0);
+#detalles article .texto,
+#detalles article .ingredientes {
+  box-shadow: 2px 3px 2px 1px rgba(0, 0, 0);
   background-color: wheat;
   padding: 15px;
   text-align: left;
 }
 
-#detalles .detalle .image img {
+#detalles article .image img {
   width: 100%;
 }
 
-#detalles .detalle .texto span {
+#detalles article .texto span {
   font-weight: bold;
 }
 
+.volver-categoria {
+  background-color: #0b530b;
+  margin: 15px 0;
+  padding: 15px;
+  box-shadow: 2px 3px 2px 1px rgba(0, 0, 0);
+}
+
+.volver-categoria a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.volver-categoria a:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 670px) {
-  #detalles .portada {
+  #detalles {
     background-position: left center;
   }
 
-  #detalles .detalle {
+  #detalles article {
     width: 90%;
   }
 }
